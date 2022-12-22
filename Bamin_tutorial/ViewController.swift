@@ -10,9 +10,20 @@ import Alamofire
 
 class ViewController: UIViewController {
 
+
+        
+        
+    @IBAction func delivery1Button(_ sender: UIButton) {
+        let delivery1VC = storyboard?.instantiateViewController(withIdentifier: "delivery1VC")
+        delivery1VC?.modalPresentationStyle = .fullScreen // 전체 화면 
+        delivery1VC?.modalTransitionStyle = .coverVertical
+        present(delivery1VC!, animated: true)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("asdsadasd")
+      
         // Do any additional setup after loading the view.hhjhuihu
         
     }

@@ -14,6 +14,7 @@
 		CB097BEE294B19AA005CB004 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB097BEC294B19AA005CB004 /* Main.storyboard */; };
 		CB097BF0294B19AC005CB004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB097BEF294B19AC005CB004 /* Assets.xcassets */; };
 		CB097BF3294B19AC005CB004 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB097BF1294B19AC005CB004 /* LaunchScreen.storyboard */; };
+		CB9DD5692954A6BA00527F82 /* deliver1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9DD5682954A6BA00527F82 /* deliver1ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		CB097BEF294B19AC005CB004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB097BF2294B19AC005CB004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB097BF4294B19AC005CB004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB9DD5682954A6BA00527F82 /* deliver1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deliver1ViewController.swift; sourceTree = "<group>"; };
 		D053161C473DA3B4D42C4F3D /* Pods-Bamin_tutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bamin_tutorial.debug.xcconfig"; path = "Target Support Files/Pods-Bamin_tutorial/Pods-Bamin_tutorial.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +76,7 @@
 				CB097BE6294B19AA005CB004 /* AppDelegate.swift */,
 				CB097BE8294B19AA005CB004 /* SceneDelegate.swift */,
 				CB097BEA294B19AA005CB004 /* ViewController.swift */,
+				CB9DD5682954A6BA00527F82 /* deliver1ViewController.swift */,
 				CB097BEC294B19AA005CB004 /* Main.storyboard */,
 				CB097BEF294B19AC005CB004 /* Assets.xcassets */,
 				CB097BF1294B19AC005CB004 /* LaunchScreen.storyboard */,
@@ -88,7 +91,6 @@
 				D053161C473DA3B4D42C4F3D /* Pods-Bamin_tutorial.debug.xcconfig */,
 				5598A94CB29734E3490AD365 /* Pods-Bamin_tutorial.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,6 +211,7 @@
 			files = (
 				CB097BEB294B19AA005CB004 /* ViewController.swift in Sources */,
 				CB097BE7294B19AA005CB004 /* AppDelegate.swift in Sources */,
+				CB9DD5692954A6BA00527F82 /* deliver1ViewController.swift in Sources */,
 				CB097BE9294B19AA005CB004 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
