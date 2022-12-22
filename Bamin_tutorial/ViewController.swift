@@ -6,6 +6,7 @@
 //
 import SwiftUI
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
