@@ -11,10 +11,12 @@ import Alamofire
 class ViewController: UIViewController {
 
 
-        
+  
+
+    
         
     @IBAction func delivery1Button(_ sender: UIButton) {
-        let delivery1VC = storyboard?.instantiateViewController(withIdentifier: "delivery1VC")
+        let delivery1VC = storyboard?.instantiateViewController(withIdentifier: "delivery1VC") //UIViewController 리턴
         delivery1VC?.modalPresentationStyle = .fullScreen // 전체 화면 
         delivery1VC?.modalTransitionStyle = .coverVertical
         present(delivery1VC!, animated: true)

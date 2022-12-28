@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e7q-3F-0u4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WGa-aQ-88h">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -23,9 +23,6 @@
                                         <rect key="frame" x="10" y="86" width="373" height="56"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="e7q-3F-0u4" id="vfV-AV-Ksx"/>
-                                        </connections>
                                     </searchBar>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="우리집" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSc-qR-itL">
                                         <rect key="frame" x="9.9999999999999964" y="52.666666666666664" width="54.666666666666657" height="25.333333333333336"/>
@@ -497,7 +494,7 @@
                                                                         </buttonConfiguration>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="청춘 닭꼬치 태평점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RA-Zk-VHs">
-                                                                        <rect key="frame" x="10.000000000000007" y="213.00000000000003" width="126.66666666666669" height="125.33333333333334"/>
+                                                                        <rect key="frame" x="10.000000000000007" y="213" width="126.66666666666669" height="20.333333333333343"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -509,13 +506,13 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2,900원~3,900원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgT-hi-557">
-                                                                        <rect key="frame" x="62.333333333333314" y="346.33333333333326" width="129" height="20.333333333333314"/>
+                                                                        <rect key="frame" x="62.333333333333314" y="241.33333333333326" width="129" height="20.333333333333314"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="배달팁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJb-bf-5sI">
-                                                                        <rect key="frame" x="10.000000000000004" y="346.33333333333326" width="44.333333333333343" height="20.333333333333314"/>
+                                                                        <rect key="frame" x="10.000000000000004" y="241.33333333333329" width="44.333333333333343" height="125.33333333333334"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -987,16 +984,44 @@
                                     <action selector="homeButton:" destination="WGa-aQ-88h" eventType="touchUpInside" id="Fb8-hR-U0W"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCp-Wq-Jm4">
+                                <rect key="frame" x="50" y="193" width="293" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="S8O-GN-Onu"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="WGa-aQ-88h" eventType="touchUpInside" id="CVD-Qc-Q1m"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KCp-sM-1Nq" userLabel="searchText">
+                                <rect key="frame" x="50" y="109" width="293" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BAW-nr-0fD"/>
                         <color key="backgroundColor" systemColor="systemMintColor"/>
                         <constraints>
+                            <constraint firstItem="KCp-sM-1Nq" firstAttribute="leading" secondItem="BAW-nr-0fD" secondAttribute="leading" constant="50" id="1Ff-F1-sqp"/>
                             <constraint firstItem="UI3-Ah-USs" firstAttribute="centerY" secondItem="z0g-bz-oHv" secondAttribute="centerY" id="7eB-XN-aXv"/>
+                            <constraint firstItem="BAW-nr-0fD" firstAttribute="trailing" secondItem="KCp-sM-1Nq" secondAttribute="trailing" constant="50" id="9YH-23-Jsl"/>
+                            <constraint firstItem="VCp-Wq-Jm4" firstAttribute="top" secondItem="KCp-sM-1Nq" secondAttribute="bottom" constant="50" id="Ao1-w5-C9t"/>
+                            <constraint firstItem="BAW-nr-0fD" firstAttribute="trailing" secondItem="VCp-Wq-Jm4" secondAttribute="trailing" constant="50" id="E6Z-WR-Nlr"/>
+                            <constraint firstItem="KCp-sM-1Nq" firstAttribute="centerX" secondItem="z0g-bz-oHv" secondAttribute="centerX" id="PSi-YL-9AM"/>
                             <constraint firstItem="UI3-Ah-USs" firstAttribute="centerX" secondItem="z0g-bz-oHv" secondAttribute="centerX" id="Sk0-9R-MN3"/>
                             <constraint firstItem="FG3-pO-XET" firstAttribute="top" secondItem="UI3-Ah-USs" secondAttribute="bottom" constant="50" id="UZD-4a-E0l"/>
                             <constraint firstItem="FG3-pO-XET" firstAttribute="centerX" secondItem="z0g-bz-oHv" secondAttribute="centerX" id="mgw-Fx-wo3"/>
+                            <constraint firstItem="VCp-Wq-Jm4" firstAttribute="centerX" secondItem="z0g-bz-oHv" secondAttribute="centerX" id="sac-dz-Ogu"/>
+                            <constraint firstItem="UI3-Ah-USs" firstAttribute="top" secondItem="VCp-Wq-Jm4" secondAttribute="bottom" constant="100" id="tfX-2c-RPk"/>
+                            <constraint firstItem="VCp-Wq-Jm4" firstAttribute="leading" secondItem="BAW-nr-0fD" secondAttribute="leading" constant="50" id="yAG-m1-g9L"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchTextField" destination="KCp-sM-1Nq" id="Avq-ga-vxa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PkW-T4-XbW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
